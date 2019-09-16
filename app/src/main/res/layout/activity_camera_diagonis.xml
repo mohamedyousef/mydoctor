@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CameraDiagonisActivity">
+
+    <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnDetectObject"
+            android:maxLines="15" android:textSize="26sp"
+            android:scrollbars="vertical" android:text="قم بفتح الكاميرا لالتقاط صورة للمرض "
+            android:textAlignment="center" android:layout_marginBottom="35dp"
+            android:textColor="@android:color/black" android:fontFamily="@font/hacencasablancaheavy"/>
+
+    <Button
+        android:id="@+id/btnDetectObject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="  فتح الكاميرا"
+        android:background="@color/red" android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp" android:layout_marginLeft="25dp"
+        android:textColor="@android:color/white"  android:fontFamily="@font/hacencasablancaheavy" android:textSize="16sp"
+        android:visibility="visible" android:onClick="Detect"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

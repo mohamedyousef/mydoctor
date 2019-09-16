@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent" android:id="@+id/arch"
+        android:layout_height="25dp" android:layout_alignParentTop="true"
+        android:background="@color/colordarkblue"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:id="@+id/title_questions_id"
+        android:layout_marginTop="40dp"
+        android:text="ُاحمالية الاصابة بالمرض كبير"
+        android:fontFamily="@font/hacencasablancaheavy"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_goto_advice"
+        android:textColor="#333"
+        android:text=" اهم النصائح للتعامل مع هذا المرض "
+        android:fontFamily="@font/hacencasablancaheavy"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_home_page"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:text="الصفحة الرئيسية"
+            android:fontFamily="@font/hacencasablancaheavy"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textColor="#fff"
+            android:background="@color/orange"
+            android:id="@+id/btn_test_again"
+            android:text=" تجربه اخري"
+            android:fontFamily="@font/hacencasablancaheavy"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

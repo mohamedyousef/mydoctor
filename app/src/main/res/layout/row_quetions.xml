@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical" android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/banneraldpi"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مرض السرطان" android:id="@+id/title_quetions"
+            android:fontFamily="@font/hacencasablancaheavy"
+            android:textColor="#233" android:textAlignment="center"
+            android:padding="10dp" android:textSize="23sp"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp" android:id="@+id/btn_questions"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="اجراء اختبار" android:textSize="21sp"
+            android:fontFamily="@font/hacencasablancaheavy"
+            android:textColor="#fff"
+            android:background="@drawable/card"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

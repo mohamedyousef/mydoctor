@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraDetectionActivity">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ckCropOutput="false"
+        app:ckDoubleTapToToggleFacing="true"
+        app:ckFacing="back"
+        app:ckFlash="on"
+        app:ckFocus="tap"
+        app:ckMethod="speed"
+        app:ckPinchToZoom="true"
+        android:layout_above="@+id/a"
+        app:ckZoom="1.0"
+        />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"  android:background="@color/darkblue"
+        android:orientation="horizontal" android:id="@+id/a"
+         android:weightSum="3" android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:layout_width="0dp" android:onClick="bu_toggle_fac"
+            android:layout_height="80dp" android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:id="@+id/facingButton"
+                android:layout_width="45dp"
+                android:layout_height="35dp" android:tint="@color/white"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_facing_front"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"  android:onClick="Bu_Capture"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:id="@+id/captureButton"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:src="@drawable/if_photo" android:tint="@color/white"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp" android:onClick="Bu_Flash"
+            android:layout_height="80dp" android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            tools:ignore="OnClick">
+
+            <ImageView
+                android:id="@+id/flashButton"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center" android:tint="@color/white"
+                android:src="@drawable/ic_flash_on"
+                 />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

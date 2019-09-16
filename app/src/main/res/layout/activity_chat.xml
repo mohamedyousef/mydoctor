@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_chat"
+    android:background="#E5E5E5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tool"
+        android:layout_height="match_parent"
+        app:outcomingDefaultBubbleColor="@color/colorPrimary"
+        app:incomingDefaultBubbleColor="#fff"
+        android:layout_above="@+id/input" />
+
+    <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:inputButtonDefaultBgColor="@color/colorPrimary"
+        app:inputButtonDefaultIconColor="#fff"
+        android:layout_alignParentBottom="true"
+        app:inputBackground="@color/white"
+        android:background="#f1f1f1"
+        app:inputHint="اكتب الاقتراح او الشكوي "/>
+
+</RelativeLayout>

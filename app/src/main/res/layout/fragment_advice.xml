@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AdivceActivity"
+    android:background="#ccc">
+
+
+    <TextView
+        android:layout_width="match_parent" android:id="@+id/toolbar2"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"  android:layout_centerHorizontal="true"
+        android:fontFamily="@font/hacencasablancaheavy"
+        android:padding="10dp"
+        android:text="اهم النصائح للتعامل مع هذا المرض "
+        android:textAlignment="center"
+        android:textColor="@color/white" android:background="@color/colorNavText"
+        android:textSize="21sp"
+        >
+
+
+    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar2"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent" android:layout_margin="5dp" app:cardCornerRadius="5dp"
+            android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/suggesstions_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btn_got_question"
+                android:text="اجراء اختبار لهذا المرض"
+                android:textColor="#fff"
+                android:fontFamily="@font/hacencasablancaheavy"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/darkblue"/>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</RelativeLayout>
